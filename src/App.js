@@ -1,6 +1,7 @@
-import Comment from "./29-01-2023/Comment";
+// import Comment from "./29-01-2023/Comment";
 import Welcome from "./29-01-2023/Welcome";
-
+import Clock from "./30-01-2023/Clock";
+import Comment from "./30-01-2023/Comment";
 
 const comment = {
   date: new Date(),
@@ -22,6 +23,7 @@ function App() {
         text={comment.text}
         author={comment.author}
       />
+      <Clock />
     </>
 
   );
