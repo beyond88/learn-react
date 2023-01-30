@@ -2,6 +2,7 @@
 import Welcome from "./29-01-2023/Welcome";
 import Clock from "./30-01-2023/Clock";
 import Comment from "./30-01-2023/Comment";
+import Form from "./30-01-2023/Form";
 
 const comment = {
   date: new Date(),
@@ -24,6 +25,7 @@ function App() {
         author={comment.author}
       />
       <Clock />
+      <Form />
     </>
 
   );
