@@ -25,4 +25,4 @@ Render elements, state, life cycle and handling events.
 
 ### `31-0-1-2023`:
 
-Understanding: If calling bind annoys you, there are two ways you can get around this. You can use public class fields syntax to correctly bind callbacks. If you aren’t using class fields syntax, you can use an arrow function in the callback.
+Understanding: If calling bind annoys you, there are two ways you can get around this. You can use public class fields syntax to correctly bind callbacks. If you aren’t using class fields syntax, you can use an arrow function in the callback. How to use conditional rendering.
