@@ -4,6 +4,7 @@ import Clock from "./30-01-2023/Clock";
 import Comment from "./30-01-2023/Comment";
 import Form from "./30-01-2023/Form";
 import Toggle from './30-01-2023/Toggle';
+import LoggingButton from "./31-01-2023/LoggingButton";
 
 
 const comment = {
@@ -29,6 +30,7 @@ function App() {
       <Clock />
       <Form />
       <Toggle />
+      <LoggingButton />
     </>
 
   );
