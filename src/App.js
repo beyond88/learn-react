@@ -5,6 +5,7 @@ import Comment from "./30-01-2023/Comment";
 import Form from "./30-01-2023/Form";
 import Toggle from './30-01-2023/Toggle';
 import LoggingButton from "./31-01-2023/LoggingButton";
+import LoginControl from "./31-01-2023/LoginControl";
 import PackingList from "./31-01-2023/PackingList";
 
 const comment = {
@@ -32,6 +33,7 @@ function App() {
       <Toggle />
       <LoggingButton />
       <PackingList />
+      <LoginControl />
     </>
 
   );

@@ -5,6 +5,29 @@ function Item({ name, isPacked }){
     }
 
     return <li className="item">{name} </li>;
+
+    //Using ternary operator
+    // return (
+    //     <li className="item">
+    //       {isPacked ? name + ' ✔' : name}
+    //     </li>
+    //   );
+
+    //More short
+    // {isPacked ? (
+    //     <del>
+    //       {name + ' ✔'}
+    //     </del>
+    //   ) : (
+    //     name
+    //   )}
+
+    //Too short
+    // return (
+    //     <li className="item">
+    //       {name} {isPacked && '✔'}
+    //     </li>
+    //   );
 }
 
 export default function PackingList(){
