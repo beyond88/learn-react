@@ -1,5 +1,6 @@
 // import Comment from "./29-01-2023/Comment";
 import Blog from "./01-02-2023/Blog";
+import NameForm from "./01-02-2023/NameForm";
 import NumberList from "./01-02-2023/NumberList";
 import Welcome from "./29-01-2023/Welcome";
 import Clock from "./30-01-2023/Clock";
@@ -46,6 +47,8 @@ function App() {
       <LoginControl />
       <NumberList numbers={numbers}/>
       <Blog posts={posts} />
+
+      <NameForm />
     </>
 
   );
