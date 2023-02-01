@@ -1,5 +1,6 @@
 // import Comment from "./29-01-2023/Comment";
 import Blog from "./01-02-2023/Blog";
+import Calculator from "./01-02-2023/Calculator";
 import NameForm from "./01-02-2023/NameForm";
 import NumberList from "./01-02-2023/NumberList";
 import Welcome from "./29-01-2023/Welcome";
@@ -49,6 +50,7 @@ function App() {
       <Blog posts={posts} />
 
       <NameForm />
+      <Calculator />
     </>
 
   );
