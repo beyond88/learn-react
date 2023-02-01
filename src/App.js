@@ -1,4 +1,5 @@
 // import Comment from "./29-01-2023/Comment";
+import Blog from "./01-02-2023/Blog";
 import NumberList from "./01-02-2023/NumberList";
 import Welcome from "./29-01-2023/Welcome";
 import Clock from "./30-01-2023/Clock";
@@ -20,6 +21,11 @@ const comment = {
 
 const numbers = [2,4,5,8,1,9];
 
+const posts = [
+  {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+  {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+];
+
 
 function App() {
   return (
@@ -39,6 +45,7 @@ function App() {
       <PackingList />
       <LoginControl />
       <NumberList numbers={numbers}/>
+      <Blog posts={posts} />
     </>
 
   );
