@@ -1,4 +1,9 @@
 
+function ListItem(props) {
+    return <li>{props.value}</li>
+}
+
+
 export default function NumberList(props){
     const numbers = props.numbers;
 
@@ -7,7 +12,7 @@ export default function NumberList(props){
     }
 
     const listItems = numbers.map((number) => 
-        <li key={number.id}>{number}</li>
+       <ListItem key={ number.toString() } value={number}/>
     );
 
     return <ul>{listItems}</ul>
