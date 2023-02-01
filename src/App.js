@@ -1,4 +1,5 @@
 // import Comment from "./29-01-2023/Comment";
+import NumberList from "./01-02-2023/NumberList";
 import Welcome from "./29-01-2023/Welcome";
 import Clock from "./30-01-2023/Clock";
 import Comment from "./30-01-2023/Comment";
@@ -17,6 +18,9 @@ const comment = {
   }
 };
 
+const numbers = [2,4,5,8,1,9];
+
+
 function App() {
   return (
     <>
@@ -34,6 +38,7 @@ function App() {
       <LoggingButton />
       <PackingList />
       <LoginControl />
+      <NumberList numbers={numbers}/>
     </>
 
   );

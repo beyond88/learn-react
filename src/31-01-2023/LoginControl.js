@@ -2,18 +2,18 @@ import React from "react";
 
 export default class LoginControl extends React.Component{
     constructor(props){
-        super(props);
-        this.handleLoginClick = this.handleLoginClick.bind(this);
-        this.handleLogoutClick = this.handleLogoutClick.bind(this);
-        this.state = { isLoggedIn: false};
+      super(props);
+      this.handleLoginClick = this.handleLoginClick.bind(this);
+      this.handleLogoutClick = this.handleLogoutClick.bind(this);
+      this.state = { isLoggedIn: false };
     }
 
     handleLoginClick(){
-        this.setState({ isLoggedIn: true})
+      this.setState({ isLoggedIn: true })
     }
 
     handleLogoutClick(){
-        this.setState({ isLoggedIn: false})
+      this.setState({ isLoggedIn: false })
     }
 
     render(){
@@ -35,11 +35,11 @@ export default class LoginControl extends React.Component{
     }
 }
 
-function UserGreeting(props) {
+function UserGreeting() {
     return <h1>Welcome back!</h1>;
   }
   
-  function GuestGreeting(props) {
+  function GuestGreeting() {
     return <h1>Please sign up.</h1>;
   }
   
