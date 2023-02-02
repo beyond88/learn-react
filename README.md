@@ -30,3 +30,7 @@ Understanding: If calling bind annoys you, there are two ways you can get around
 ### `01-02-2023`:
 
 Understanding: How to create list, assign key, concern about unique key. Split component into small parts, forms, lifting state up, and composition. Nesting child components into parent components.
+
+### `02-02-2023`:
+
+Accessebility: focus, mouse pointer, and events.

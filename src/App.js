@@ -12,6 +12,7 @@ import LoggingButton from "./31-01-2023/LoggingButton";
 import LoginControl from "./31-01-2023/LoginControl";
 import PackingList from "./31-01-2023/PackingList";
 import WelcomeDialog from './01-02-2023/Composition';
+import CustomRef from './02-02-2023//CustomRef';
 
 const comment = {
   date: new Date(),
@@ -54,6 +55,8 @@ function App() {
       <Calculator />
 
       <WelcomeDialog />
+
+      <CustomRef />
     </>
 
   );
