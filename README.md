@@ -33,4 +33,8 @@ Understanding: How to create list, assign key, concern about unique key. Split c
 
 ### `02-02-2023`:
 
-Accessebility: focus, mouse pointer, and events. Create context, error handaling.
+Accessebility: focus, mouse pointer, and events. Create context, error handling.
+
+### `03-02-2023`:
+
+Understanding: hooks. useState, useEffect. 
