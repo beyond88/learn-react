@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export default function Example(){
     
     const [ count, setCount ] = useState(0);
+
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    });
     
     return (
         <div>
