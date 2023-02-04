@@ -1,7 +1,6 @@
 import { useCallback, useState } from "react";
 import Todos from "./Todos";
 
-
 export default function MyTodo()  {
     const [ count, setCount ] = useState(0);
     const [ todos, setTodos ] = useState([]);
