@@ -13,6 +13,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm test` `npm run build` `npm run eject`
 
+## Run docker
+
+### `docker-compose -f docker-compose.dev.yml up`
+
 ## Learning curve
 
 ### `29-01-2023`:
@@ -37,4 +41,12 @@ Accessebility: focus, mouse pointer, and events. Create context, error handling.
 
 ### `03-02-2023`:
 
-Understanding: hooks. useState, useEffect. 
+Understanding: hooks. useState, useEffect.
+
+### `04-02-2023`:
+
+Understanding: hooks. useReducer, useCallback.
+
+### `05-02-2023`:
+
+Understanding: How to dockerized a react app.
