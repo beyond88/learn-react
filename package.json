@@ -35,5 +35,8 @@
       "last 1 safari version"
     ]
   },
-  "dev": "docker-compose -f docker-compose.dev.yml up"
+  "dev": "docker-compose -f docker-compose.dev.yml up",
+  "devDependencies": {
+    "react-router-dom": "^6.8.0"
+  }
 }

@@ -1,21 +1,28 @@
 // import Comment from "./29-01-2023/Comment";
-import Blog from "./01-02-2023/Blog";
-import Calculator from "./01-02-2023/Calculator";
-import WelcomeDialog from './01-02-2023/Composition';
-import NameForm from "./01-02-2023/NameForm";
-import NumberList from "./01-02-2023/NumberList";
-import CustomRef from './02-02-2023//CustomRef';
-import Page from "./02-02-2023/Page";
-import Example from "./03-02-2023/Example";
-import MyTodo from "./04-02-2023/MyTodo";
-import Welcome from "./29-01-2023/Welcome";
-import Clock from "./30-01-2023/Clock";
-import Comment from "./30-01-2023/Comment";
-import Form from "./30-01-2023/Form";
-import Toggle from './30-01-2023/Toggle';
-import LoggingButton from "./31-01-2023/LoggingButton";
-import LoginControl from "./31-01-2023/LoginControl";
-import PackingList from "./31-01-2023/PackingList";
+// import Blog from "./01-02-2023/Blog";
+// import Calculator from "./01-02-2023/Calculator";
+// import WelcomeDialog from './01-02-2023/Composition';
+// import NameForm from "./01-02-2023/NameForm";
+// import NumberList from "./01-02-2023/NumberList";
+// import CustomRef from './02-02-2023//CustomRef';
+// import Page from "./02-02-2023/Page";
+// import Example from "./03-02-2023/Example";
+// import MyTodo from "./04-02-2023/MyTodo";
+// import Welcome from "./29-01-2023/Welcome";
+// import Clock from "./30-01-2023/Clock";
+// import Comment from "./30-01-2023/Comment";
+// import Form from "./30-01-2023/Form";
+// import Toggle from './30-01-2023/Toggle';
+// import LoggingButton from "./31-01-2023/LoggingButton";
+// import LoginControl from "./31-01-2023/LoginControl";
+// import PackingList from "./31-01-2023/PackingList";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Layout from "./pages/Layout";
+import NoPage from "./pages/NoPage";
 
 
 const comment = {
@@ -36,40 +43,51 @@ const posts = [
 
 
 function App() {
+  // return (
+  //   <>
+  //     <Welcome  name="John" />
+  //     <Welcome  name="Emili" />
+  //     <Welcome  name="Alen" />
+  //     <Comment 
+  //       date={comment.date}
+  //       text={comment.text}
+  //       author={comment.author}
+  //     />
+  //     <Clock />
+  //     <Form />
+  //     <Toggle />
+  //     <LoggingButton />
+  //     <PackingList />
+  //     <LoginControl />
+  //     <NumberList numbers={numbers}/>
+  //     <Blog posts={posts} />
+
+  //     <NameForm />
+  //     <Calculator />
+
+  //     <WelcomeDialog />
+
+  //     <CustomRef />
+
+  //     <Page />
+
+  //     <Example />
+
+  //     <MyTodo />
+  //   </>
+  // );
+
   return (
-    <>
-      <Welcome  name="John" />
-      <Welcome  name="Emili" />
-      <Welcome  name="Alen" />
-      <Comment 
-        date={comment.date}
-        text={comment.text}
-        author={comment.author}
-      />
-      <Clock />
-      <Form />
-      <Toggle />
-      <LoggingButton />
-      <PackingList />
-      <LoginControl />
-      <NumberList numbers={numbers}/>
-      <Blog posts={posts} />
-
-      <NameForm />
-      <Calculator />
-
-      <WelcomeDialog />
-
-      <CustomRef />
-
-      <Page />
-
-      <Example />
-
-      <MyTodo />
-
-    </>
-
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
